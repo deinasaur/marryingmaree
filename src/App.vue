@@ -1,19 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <top-header></top-header>
+    <!--<img src="./assets/logo.png">-->
     <router-view/>
   </div>
 </template>
 
 <script>
+import TopHeader from './components/static/Header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {TopHeader}
 }
 </script>
 
-<style>
+<style lang="scss">
+  @font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: Roboto Slab;
+    src: url(assets/fonts/RobotoSlab-Regular.ttf) format('truetype');
+  }
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
