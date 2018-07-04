@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <top-header></top-header>
+    <top-header v-if="active"></top-header>
     <!--<img src="./assets/logo.png">-->
     <router-view/>
   </div>
@@ -10,7 +10,12 @@
 import TopHeader from './components/static/Header'
 export default {
   name: 'App',
-  components: {TopHeader}
+  components: {TopHeader},
+  data () {
+    return {
+      active: false
+    }
+  }
 }
 </script>
 
