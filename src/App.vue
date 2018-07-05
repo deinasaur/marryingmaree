@@ -13,25 +13,33 @@ export default {
   components: {TopHeader},
   data () {
     return {
-      active: false
+      active: true
     }
   }
 }
 </script>
 
 <style lang="scss">
-  @font-face {
-    font-family: Montserrat;
-    src: url(assets/fonts/Montserrat-Regular.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: Roboto;
-    src: url(assets/fonts/Roboto-Regular.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: Roboto Slab;
-    src: url(assets/fonts/RobotoSlab-Regular.ttf) format('truetype');
-  }
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url(assets/fonts/RobotoSlab-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 #app {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
