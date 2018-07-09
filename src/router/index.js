@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import WeChat from '@/components/WeChat'
+import EsSix from '@/components/ES6'
 
 Vue.use(Router)
 
@@ -14,14 +15,6 @@ export default new Router({
     //   component: HelloWorld
     // },
     {
-      path: '/',
-      name: 'home'
-    },
-    {
-      path: '#',
-      name: 'home'
-    },
-    {
       path: '/home',
       name: 'home',
       component: Home
@@ -30,6 +23,11 @@ export default new Router({
       path: '/wechat',
       name: 'we-chat',
       component: WeChat
+    },
+    {
+      path: '/es-six',
+      name: 'es-six',
+      component: EsSix
     }
   ]
 })

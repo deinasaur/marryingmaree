@@ -32,9 +32,9 @@ export default {
 <style scoped lang="scss">
 .header {
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
-  height: 90px;
   background: rgba( 255, 255, 255, 0.95);
   border-bottom: 1px solid #F5F5F5;
   transition: top 0.3s ease-in-out;
